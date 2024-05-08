@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Musicfy</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="close">
+                <img class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <a href="https://youtube.com/@thakursilversinghrajput?si=bwSNfPzNxls9-ulr"><img width="90" src="img/logo.png" alt="logo" </a>
+                </div>
+
+                <ul>
+                    <a href="">
+                        <li><img class="invert" id="home1" src="img/home.svg" alt="home" </li>
+                    </a>
+                    <li>
+                        <input id="myInput" type="text" placeholder="Search" onkeyup="searchFun()">
+                        <img class="invert" id="search" src="img/search.svg" alt="search" />
+                    </li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+
+                <div class="heading">
+
+                    <img class="invert" src="img/playlist.svg" alt="">
+
+                    <h2>Your Library </h2>
+                </div>
+                <div class="songList">
+                    <ul> </ul>
+                </div>
+
+                <div class="footer">
+                    <div class="footer1">
+                        <div class="share">
+                            <a href="https://www.facebook.com/silver.singh.125?mibextid=ZbWKwL"><img
+                                    src="img/facebook.svg" alt="" /></a>
+                            <a href="#"><img src="img/twitter.svg" alt="" /></a>
+                            <a
+                                href="https://www.linkedin.com/in/rajat-ranjan-pratap-singh-00b88124b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                                    src="img/linkedin.svg" alt="" /></a>
+                            <a href="https://youtube.com/@thakursilversinghrajput?si=bwSNfPzNxls9-ulr"><img
+                                    src="/img/youtube.svg" alt="" /></a>
+                        </div>
+                        <div class="copy">
+                            <h2 class="credit"> Copyright &copy; 2024 
+                                <div> Developer: Thakur Rajat Ranjan Rajput Pratap Singh
+                                Contributor:Avinash | Atul | Bharat</div>
+                              </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right bg-grey rounded  ">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="" />
+                        <h2> Musicfy</h2>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn"> Sign up</button>
+                    <button class="loginbtn"> Log in</button>
+                </div>
+            </div>
+            <div class=" musicfyPlaylists">
+                <h1> Musicfy Playlists </h1>
+                <div class="cardContainer"></div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"> </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"> </div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="img/prevsong.svg" alt="">
+                            <img width="35" id="play" src="img/play.svg" alt="">
+                            <img width="35" id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img width="50" src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login">
+            <form action="" class="login_form">
+                <h1 class="login__title">Login</h1>
+                <div class="login__content">
+                    <div class="login__box">
+                        <div class="login__box-input">
+                            <input type="text" required class="login__input" id="login-email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="login__box">
+                        <div class="login__box-input">
+                            <input type="password" required class="login__input" id="login-pass" placeholder="Password">
+                            <i class="closeEye login__eye" id="login-eye"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login__check">
+                    <div class="login__check-group">
+                        <input type="checkbox" class="login__check-input" id="login-check">
+                        <label for="login-check" class="login__check-label">Remember me
+
+                        </label>
+                    </div>
+
+                    <a href="https://youtube.com/@thakursilversinghrajput?si=bwSNfPzNxls9-ulr" class="login__forgot">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login__button">Login</button>
+
+                <p class="login__register">
+                    Don't have an account? <a href="https://youtube.com/@thakursilversinghrajput?si=bwSNfPzNxls9-ulr">Register</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"> </script>
+
+</body>
+
+</html>
